@@ -7,47 +7,138 @@
     <link rel="stylesheet" href="main.css">
     <title>Taylor University</title>
     
+    <style type="text/css" media=screen>
+    
+      .btn {
+	padding: 14px 24px;
+	border: 1px ;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+ 
+      a { color: inherit; } 
+ 
+      .btn:focus, .btn:active:focus, .btn.active:focus {
+        outline: 0 none;
+      }
+ 
+      .btn-primary {
+        background: #0099cc;
+        color: #ffffff;
+      }
+      
+      .no-padding {
+	padding-left: 0;
+	padding-right :0;
+      }
+      
+      div {
+	padding: 0;
+	
+      }
+ 
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        background: #33a6cc;
+      }
+      
+      img {
+	width: 100%;
+      }
+
+      
+      .gray {
+	background: #6E6E6E;
+        box-shadow: none;
+      }
+      
+      .green {
+	background: #15544C;
+        box-shadow: none;
+      }
+
+      .purple {
+	background: #420466;
+        box-shadow: none;
+      }
+      
+      .yellow {
+	background: #E57A03;
+        box-shadow: none;
+      } 
+
+      .btn-primary:active, .btn-primary.active {
+        background: #007299;
+        box-shadow: none;
+      }
+      
+      .dropdown:hover .dropdown-menu {
+	display: block;	
+      }
+    
+      .sharp {
+	border-radius:0;
+	padding: 5px;
+      }
+      
+      .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+        color: #33a6cc;
+        border-color: #33a6cc;
+      }
+      .btn-primary.outline:active, .btn-primary.outline.active {
+	border-color: #007299;
+	color: #007299;
+	box-shadow: none;
+      }
+    </style>
+    
+    
+    <script type="text/css">
+      
+      
+    </script>
+    
+    
   </head>
   <body>
     <div class="navbar">
-      <div class="col-md-5">
+      <div class="col-md-3 col-md-offset-2">
       </div>
       <div class="col-md-2">
-      <h1 class="center text-center">
-	<img class="visible-print" alt="Taylor University" src="./white_Taylor_logo_180.png" class="center">
-	<img class="hidden-print" alt="Taylor University" src="./taylor-purple-logo.png" class="center">
+      <h1 class="center block-center" style="margin-top: -1px">
+	<img class="img-responsive" alt="Taylor University" src="./taylor-logo.png" class="center">
       </h1>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-3" style="padding-right:0px">
 	<div class="col-md-3"></div>
-	<div class="col-md-9 align-right" style="margin-top: 20px">
-          <a class="btn btn-default" href="http://athletics.taylor.edu/">Athletics</a>
-          <a class="btn btn-default" href="http://www.taylorconnect.org/">Alumni</a>
-          <input text="Site Search" class="textbox" id="search-input" name="keyword" type="text" name="query">
+	<div class="col-md-9 align-right" style="margin-top: 20px; padding-left:0; padding-right:0; float:right">
+          <a class="btn btn-default sharp" href="http://athletics.taylor.edu/">Athletics</a>
+          <a class="btn btn-default sharp" href="http://www.taylorconnect.org/">Alumni</a>
+          <input text="Site Search" style="width:120px; float:right" class="textbox" id="search-input" name="keyword" type="text" name="query">
 	</div>
       </div>
     </div>
     <div class="row" id="audButtonRow">
-      <div class="col-md-4 col-md-offset-2">
-        <ul style="padding-left: 0px;">
-          <li class="btn btn-default" style="margin: 0px" disabled="true">I am a...</li>
-          <li class="btn btn-default" style="margin: 0px"><a HREF="#">Future Student</a></li>
-          <li class="btn btn-default" style="margin: 0px" ><a href="#">Parent</a></li>    
+      <div class="col-md-4 col-md-offset-2" style="padding-left:0; padding-right:0">
+        <ul style="padding-left: 0px">
+          <li class="btn btn-primary sharp gray" style="margin: 0px" disabled="true">I am a...</li>
+          <li class="btn btn-primary sharp" style="margin: 0px"><a HREF="#">Future Student</a></li>
+          <li class="btn btn-default sharp" style="margin: 0px" ><a href="#">Parent</a></li>    
         </ul>
       </div>
-      <div class="col-md-4 col-md-offset-2">
-	<ul style="padding-left: 0px;">	
-	  <li class="btn btn-default" style="margin: 0px"><a href="/admissions/undergraduate/information-request-form.shtml">Request Info</a></li>
-	  <li class="btn btn-default" style="margin: 0px"><a href="/admissions/undergraduate/visit-campus/index.shtml">Visit</a></li>
-	  <li class="btn btn-default" style="margin: 0px"><a href="/admissions/undergraduate/application-process/index.shtml">Apply</a></li>
+      <div class="col-md-3 col-md-offset-1" style="padding-right: 0px">
+	<ul style="padding-left: 0px; float:right">	
+	  <li class="btn btn-primary sharp gray" style="margin: 0px"><a href="/admissions/undergraduate/information-request-form.shtml">Request Info</a></li>
+	  <li class="btn btn-primary sharp green" style="margin: 0px"><a href="/admissions/undergraduate/visit-campus/index.shtml">Visit</a></li>
+	  <li class="btn btn-primary sharp outline yellow" style="margin: 0px"><a href="/admissions/undergraduate/application-process/index.shtml">Apply</a></li>
 	</ul>
       </div>
     </div>
 
     <div class="row">     
-      <div class="col-md-offset-2 col-md-6 row">
+      <div class="col-md-offset-2 col-md-6 row" style="padding-left:0; padding-right:0">
 	    <div class="dropdown" style="padding-left: 0px; padding-right: 0px; float:left">
-	      <button class="dropdown-toggle" style="border-type:none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	      <button class="btn btn-default outline sharp dropdown-toggle" style="border-type:none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		ADMISSIONS
 		<span class="caret"></span>
 	      </button>
@@ -64,7 +155,7 @@
 	      </ul>
 	    </div>
 	    <div class="dropdown" style="padding-left: 0px; padding-right: 0px; float:left; border-style:none">
-              <button class="dropdown-toggle" style="border-type:none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <button class="btn btn-default outline sharp dropdown-toggle" style="border-type:none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		ACADEMICS
 		<span class="caret"></span>
               </button>
@@ -83,7 +174,7 @@
               </ul>
 	    </div>
         <div class="dropdown" style="padding-left: 0px; padding-right: 0px; float:left; border-style:none">
-	      <button class="dropdown-toggle" type="button" style="border-type:none" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	      <button class="btn btn-default outline sharp dropdown-toggle" type="button" style="border-type:none" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		STUDENT LIFE
 		<span class="caret"></span>
 	      </button>
@@ -98,7 +189,7 @@
 	      </ul>
 	    </div>
         <div class="dropdown" style="padding-left: 0px; padding-right: 0px; float:left; border-style:none">
-	      <button class="dropdown-toggle" type="button" style="border-type:none" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	      <button class="btn btn-default outline sharp dropdown-toggle" type="button" style="border-type:none" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		ABOUT
 		<span class="caret"></span>
 	      </button>
@@ -112,6 +203,12 @@
 		<li><a href="#">NEWS</a></li>
 	      </ul>
 	    </div>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2" style="padding-left: 0; padding-right:0; margin-top: 0px">
+	<h1 class="center-block img-responsive" style="margin-top: 0px">
+	  <img class="center-block" alt="Taylor University" src="http://taylor.edu/contentAsset/raw-data/a87de521-6f52-40a9-afd5-1ae6c6e5eee1/homePageImage">
+	</h1>
       </div>
       
       <div class="col-md-8 col-md-offset-2">
@@ -152,17 +249,17 @@
       
 	  
 	  
-	  
-	  
-	  
-   <footer class="container">
-  <div class= "row navbar navbar-default navbar-fixed-bottom">
-    
-   
+	
+      
+      
+  <!--<footer class="row col-md-8 col-md-offset-2">-->
+    <div class= "row navbar navbar-default col-md-8 col-md-offset-2" style="padding-top: 10px;">
       <div class="container-fluid col-md-4 row">
 
         <div class="col-md-4">
-          <h2 class="content-main label label-primary">Taylor</h2>
+	  <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp">Taylor</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a href="/about/profile/distinctions/">Distinctions</a></li>
             <li><a href="/about/area-info/">Area Info</a></li>
@@ -171,7 +268,9 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h2 class="label label-primary">Related</h2>
+          <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp purple">Related</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a class="special-two" href="https://my.taylor.edu/">myTaylor Portal</a></li>
             <li><a href="http://www.remedylive.com/">RemedyLIVE</a></li>
@@ -180,7 +279,9 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h2 class="label label-primary">Legal</h2>
+          <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp yellow">Legal</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a href="/about/services/student-consumer-information/">Student Info</a></li>
             <li><a class="special-three" href="/home/contact-us.shtml">Contact Us</a></li>
@@ -189,19 +290,16 @@
         </div>
 
       </div>
-     <!--End .four-->
 
 
     <div class="col-md-4">
-		<div class="">
-		  <div class="">
-			<a href="https://www.facebook.com/tayloruniversity" target="_blank"><img src="/application/themes/foundation-5/images/template/facebook-icon.png" /></a>
-			<a href="http://www.twitter.com/tayloru" target="_blank"><img src="/application/themes/foundation-5/images/template/twitter-icon.png" /></a>
-			<a href="http://www.youtube.com/user/TUOnlineComm/" target="_blank"><img src="/application/themes/foundation-5/images/template/youtube-icon.png" /></a>
-			<a href="http://www.taylor.edu/news/news_rss.shtml?classcat=topNews" target="_blank"><img src="/application/themes/foundation-5/images/template/rss-icon.png" /></a>
+		  <div class="row">
+			<a class="no-padding col-md-2 col-md-offset-2" href="https://www.facebook.com/tayloruniversity" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/facebook-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.twitter.com/tayloru" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/twitter-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.youtube.com/user/TUOnlineComm/" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/youtube-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.taylor.edu/news/news_rss.shtml?classcat=topNews" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/rss-icon.png" /></a>
 		  </div>
-		</div>
-		<div class="small">
+		<div class="small text-center" style="padding-top: 10px;">
 		  <p><a href="http://www.taylor.edu" target="_blank">Taylor University</a> &copy; 2015  All rights reserved.</p>
 		</div>
     </div> <!--End .four-->
@@ -215,7 +313,7 @@
 
   </div> <!--End .row.footer-nav -->
   <div class="">&nbsp;</div>
-</footer>
+<!--</footer>-->
 
   
   
