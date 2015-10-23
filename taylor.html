@@ -27,6 +27,16 @@
         background: #0099cc;
         color: #ffffff;
       }
+      
+      .no-padding {
+	padding-left: 0;
+	padding-right :0;
+      }
+      
+      div {
+	padding: 0;
+	
+      }
  
       .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
         background: #33a6cc;
@@ -35,25 +45,24 @@
       img {
 	width: 100%;
       }
+
       
-      div {
-	padding-left:0;
-	padding-right:0;
-	
-	
-      }
-      
-      .btn.gray {
+      .gray {
 	background: #6E6E6E;
         box-shadow: none;
       }
       
-      .btn.green {
+      .green {
 	background: #15544C;
         box-shadow: none;
       }
 
-      .btn.yellow {
+      .purple {
+	background: #420466;
+        box-shadow: none;
+      }
+      
+      .yellow {
 	background: #E57A03;
         box-shadow: none;
       } 
@@ -67,7 +76,7 @@
 	display: block;	
       }
     
-      .btn.sharp {
+      .sharp {
 	border-radius:0;
 	padding: 5px;
       }
@@ -204,11 +213,13 @@
       
       
   <!--<footer class="row col-md-8 col-md-offset-2">-->
-    <div class= "row navbar navbar-default col-md-8 col-md-offset-2">
+    <div class= "row navbar navbar-default col-md-8 col-md-offset-2" style="padding-top: 10px;">
       <div class="container-fluid col-md-4 row">
 
         <div class="col-md-4">
-          <h2 class="content-main label label-primary">Taylor</h2>
+	  <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp">Taylor</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a href="/about/profile/distinctions/">Distinctions</a></li>
             <li><a href="/about/area-info/">Area Info</a></li>
@@ -217,7 +228,9 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h2 class="label label-primary">Related</h2>
+          <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp purple">Related</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a class="special-two" href="https://my.taylor.edu/">myTaylor Portal</a></li>
             <li><a href="http://www.remedylive.com/">RemedyLIVE</a></li>
@@ -226,7 +239,9 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h2 class="label label-primary">Legal</h2>
+          <div class="row text-center" style="padding-bottom: 10px">
+	    <h2 class="content-main label label-primary sharp yellow">Legal</h2>
+	  </div>
           <ul class="container-fluid small list-unstyled">
             <li><a href="/about/services/student-consumer-information/">Student Info</a></li>
             <li><a class="special-three" href="/home/contact-us.shtml">Contact Us</a></li>
@@ -235,19 +250,16 @@
         </div>
 
       </div>
-     <!--End .four-->
 
 
     <div class="col-md-4">
-		<div class="">
-		  <div class="">
-			<a href="https://www.facebook.com/tayloruniversity" target="_blank"><img src="/application/themes/foundation-5/images/template/facebook-icon.png" /></a>
-			<a href="http://www.twitter.com/tayloru" target="_blank"><img src="/application/themes/foundation-5/images/template/twitter-icon.png" /></a>
-			<a href="http://www.youtube.com/user/TUOnlineComm/" target="_blank"><img src="/application/themes/foundation-5/images/template/youtube-icon.png" /></a>
-			<a href="http://www.taylor.edu/news/news_rss.shtml?classcat=topNews" target="_blank"><img src="/application/themes/foundation-5/images/template/rss-icon.png" /></a>
+		  <div class="row">
+			<a class="no-padding col-md-2 col-md-offset-2" href="https://www.facebook.com/tayloruniversity" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/facebook-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.twitter.com/tayloru" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/twitter-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.youtube.com/user/TUOnlineComm/" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/youtube-icon.png" /></a>
+			<a class="no-padding col-md-2" href="http://www.taylor.edu/news/news_rss.shtml?classcat=topNews" target="_blank"><img src="http://taylor.edu/application/themes/foundation-5/images/template/rss-icon.png" /></a>
 		  </div>
-		</div>
-		<div class="small">
+		<div class="small text-center" style="padding-top: 10px;">
 		  <p><a href="http://www.taylor.edu" target="_blank">Taylor University</a> &copy; 2015  All rights reserved.</p>
 		</div>
     </div> <!--End .four-->
