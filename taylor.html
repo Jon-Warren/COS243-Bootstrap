@@ -33,11 +33,55 @@
 	padding-right :0;
       }
       
+      .inner-box {
+	padding-left: 5px;
+	padding-right :5px;
+      }
+      
+      .right-box {
+	padding-right: 0;
+	padding-left: 5px;
+      }
+      
+      .image { 
+	position: relative;
+      }
+      
+      .left-box {
+	padding-right: 5px;
+	padding-left: 0;
+      }
+      
+      .above-box {
+	margin-bottom: 10px
+      }
+      
+      .box-element {
+	margin-top: 15px;
+	margin-bottom: 15px;
+      }
+      
       div {
 	padding: 0;
 	
       }
  
+      .box {
+	padding: 15px;
+	height: 200px;
+	
+      }
+      
+      .box-image {
+	height: 180px;
+      }
+      
+      .image-text { 
+	position: absolute; 
+	top: 2%; 
+        left: 2%; 
+      }
+	
       .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
         background: #33a6cc;
       }
@@ -101,6 +145,10 @@
     
   </head>
   <body>
+    <div class="row" style="background-image: repeating-linear-gradient(90deg, #02851E 400px, #2C9AF0 800px, #02851E 1200px); height: 10px;">
+      
+      
+    </div>
     <div class="navbar">
       <div class="col-md-3 col-md-offset-2">
       </div>
@@ -109,24 +157,24 @@
 	<img class="img-responsive" alt="Taylor University" src="./taylor-logo.png" class="center">
       </h1>
       </div>
-      <div class="col-md-3" style="padding-right:0px">
+      <div class="col-md-4" style="padding-right:0px">
 	<div class="col-md-3"></div>
 	<div class="col-md-9 align-right" style="margin-top: 20px; padding-left:0; padding-right:0; float:right">
           <a class="btn btn-default sharp" href="http://athletics.taylor.edu/">Athletics</a>
           <a class="btn btn-default sharp" href="http://www.taylorconnect.org/">Alumni</a>
-          <input text="Site Search" style="width:120px; float:right" class="textbox" id="search-input" name="keyword" type="text" name="query">
+          <input text="Site Search" style="float:right" class="textbox" id="search-input" name="keyword" type="text" name="query">
 	</div>
       </div>
     </div>
     <div class="row" id="audButtonRow">
-      <div class="col-md-4 col-md-offset-2" style="padding-left:0; padding-right:0">
+      <div class="col-md-4 col-md-offset-1" style="padding-left:0; padding-right:0">
         <ul style="padding-left: 0px">
           <li class="btn btn-default sharp" style="margin: 0px" disabled="true">I am a...</li>
           <li class="btn btn-primary sharp" style="margin: 0px"><a HREF="#">Future Student</a></li>
           <li class="btn btn-default sharp" style="margin: 0px" ><a href="#">Parent</a></li>    
         </ul>
       </div>
-      <div class="col-md-3 col-md-offset-1" style="padding-right: 0px">
+      <div class="col-md-3 col-md-offset-3" style="padding-right: 0px">
 	<ul style="padding-left: 0px; float:right">	
 	  <li class="btn btn-primary sharp gray" style="margin: 0px"><a href="/admissions/undergraduate/information-request-form.shtml">Request Info</a></li>
 	  <li class="btn btn-primary sharp green" style="margin: 0px"><a href="/admissions/undergraduate/visit-campus/index.shtml">Visit</a></li>
@@ -136,7 +184,7 @@
     </div>
 
     <div class="row">     
-      <div class="col-md-offset-2 col-md-6 row" style="padding-left:0; padding-right:0">
+      <div class="col-md-offset-1 col-md-7 row" style="padding-left:0; padding-right:0">
 	    <div class="dropdown" style="padding-left: 0px; padding-right: 0px; float:left">
 	      <button class="btn btn-default outline sharp dropdown-toggle" style="border-type:none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		ADMISSIONS
@@ -205,47 +253,132 @@
 	    </div>
       </div>
 
-      <div class="col-md-8 col-md-offset-2" style="padding-left: 0; padding-right:0; margin-top: 0px">
-	<h1 class="center-block img-responsive" style="margin-top: 0px">
-	  <img class="center-block" alt="Taylor University" src="http://taylor.edu/contentAsset/raw-data/a87de521-6f52-40a9-afd5-1ae6c6e5eee1/homePageImage">
-	</h1>
+      <div class="col-md-10 col-md-offset-1" style="padding-left: 0; padding-right:0; margin-top: 0px; margin-bottom: 10px">
+	<div class="image">
+	  <img class="img-responsive" alt="Taylor University" src="http://taylor.edu/contentAsset/raw-data/a87de521-6f52-40a9-afd5-1ae6c6e5eee1/homePageImage">
+	  <div class="image-text">
+	    <h1 style="color: #FFFFFF">Discipled</br> through</br> Chaos</h1>
+	    <p style="color: #FFFFFF">BY Meredith Sell</p>
+	    <ul class="nav nav-pills nav-stacked">
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Apply to Taylor</a></li>
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Visit Campus</a></li>
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Get Info</a></li>
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Get Info</a></li>
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Find Your Counselor</a></li>
+	      <li style="color: #FFFFFF" role="presentation"><a href="#">Financial Aid</a></li>
+	    </ul>
+	  </div>
+	  
+	</div>
       </div>
       
-      <div class="col-md-8 col-md-offset-2">
-		<div class="col-md-4">
-			<div class="text-center">
-				<h2>DEPARTMENT & MAJOR SEARCH</h2>
-			</div>
-			
-			<div class="text-center">
-				<h2>ABET ACCREDITED COMPUTER ENGINEERING PROGRAM</h2>
-			</div>
-			
-			<!-- <div>
-				<h2>ABET ACCREDITED COMPUTER ENGINEERING PROGRAM</h2>
-			</div> -->
-		</div>
-		
-		<div class="col-md-4">
-			<div class="text-center">
-				<h2>24 AT TAYLOR VISIT</h2>
-			</div>
-			
-			<div>
-				<img class="img-responsive" src="./images/studyOrphans.jpg">
-			</div>
-		</div>
-		
-		<div class="col-md-4">
-			<div>
-				<img class="img-responsive" src="./images/updateFromThePresidentailSearchCommittee.png">
-				<h2>UPDATE FROM THE PRESIDENTIAL SEARCH COMMITTEE</h2>
-			</div>
-		</div>
-		
-		
+      <div class="col-md-10 col-md-offset-1 no-padding">
+	  <div class="col-md-4 left-box">
+	      <div class="text-center box above-box" style="background-color: #2FA4FF">
+		      <h3 style="color: #FFFFFF" class="box-element">DEPARTMENT & MAJOR SEARCH</h3>
+		      <input placeholder="Search by interest" class="box-element" type="text" style="margin-bottom: 15px"/>
+	      </div>
+	      
+	      <div class="text-center box" style="background-color: #4C004C">
+		      <h3 style="color: #FFFFFF" class="box-element">$2 MILLION OF TAYLOR'S ENDOWMENT FUND IS MANAGED BY STUDENTS</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">TAYLOR.EDU/FINANCE</p>
+	      </div>
 	  </div>
+	  
+	  <div class="col-md-4 inner-box">
+	      <div class="text-center above-box box" style="background-color: #4C004C">
+		      <h1 style="color: #FFFFFF" class="box-element">24 AT TAYLOR VISIT</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">OCTOBER 29-30</p>
+	      </div>
+	      
+	      <div class="box-image  inner-box" style="height: 200px;">
+		<div>
+		      <img class="img-responsive" src="http://taylor.edu/contentAsset/raw-data/98dec864-23d3-4d77-899b-769aac9b1e36/image">
+			</div>
+	      </div>
+	  </div>
+	  
+	  <div class="col-md-4 right-box">
+	      <div class="above-box box text-center"style="background-color: #2B2B2B; height:410px">
+		      <img class="img-responsive" src="./updateFromThePresidentailSearchCommittee.png">
+		      <h3 style="color: #FFFFFF">UPDATE FROM THE PRESIDENTIAL SEARCH COMMITTEE</h3>
+	      </div>
+	  </div>
+      </div>
       
+      <!-- second DIV -->
+      
+      <div class="col-md-10 col-md-offset-1 no-padding">
+	  <div class="col-md-4 left-box">
+	    <div class="above-box box text-center"style="background-color: #2F2F2F; height:410px">
+		      <img class="img-responsive" src="http://taylor.edu/contentAsset/image/60031c48-54c6-4981-bb30-22e50d12a860/thumbnailPhoto/filter/Resize,Crop/resize_w/380/crop_w/380/crop_h/180">
+		      <h3 style="color: #FFFFFF">MEET YOUR COUNSELOR</h3>
+		      <p style="color: #2FA4FF">David Pfeifer</p>
+		      <p style="position: absolute; bottom:1%; left:2%; color: #FFFFFF">Your location: Indiana</p>
+		      <p style="position: absolute; bottom:1%; right:2%; color: #FFFFFF">ASK DAVID A QUESTION >></p>
+	      </div>
+	  </div>
+	  
+	  <div class="col-md-4 inner-box">
+	      <div class="text-center above-box box" style="background-color: #2FA4FF;">
+		      <h3 style="color: #FFFFFF" class="box-element">LIFE IN THE LOOP</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">HUMANS OF TAYLOR UNIVERSITY</p>
+	      </div>
+	      
+	      <div class="text-center box" style="background-color: #E8BC00;">
+		      <h3 style="color: #FFFFFF" class="box-element">9 CONSECUTIVE YEARS RANKED #1 MIDWEST COLLEGE BY U.S. NEWS & WORLD REPORT.</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">READ MORE</p>
+	      </div>
+	  </div>
+	  
+	  <div class="col-md-4 right-box">
+	      <div class="text-center box above-box box-image" style="height: 200px; padding-top: 0">
+		<img class="img-responsive" src="http://taylor.edu/contentAsset/raw-data/3e0c4388-e939-46f4-9d69-a47b4c4ec1f0/image">
+	      </div>
+	      
+	      <div class="text-center box box-image" style="height: 200px; padding-top: 0">
+	      
+		      <img class="img-responsive" src="http://taylor.edu/contentAsset/raw-data/d61af7a5-1c5b-4d4e-9768-12af3f9e042f/image/6a12116d-9bc0-4519-aa6d-a07508d63960">
+		
+	      </div>
+	  </div>
+      </div>
+    
+      
+      <div class="col-md-10 col-md-offset-1 no-padding">
+	  <div class="col-md-4 left-box">
+	    <div class="above-box box left-box col-md-6 text-center"style="height:200px">
+		      <img class="img-responsive" src="http://taylor.edu/images-responsive/2x2_sm-twitter-grey.png">
+	    </div>
+	    <div class="above-box box col-md-6 text-center"style="height:200px;">
+		      <img class="img-responsive" src="http://taylor.edu/images-responsive/2x2_sm-instagram-grey.png">
+	    </div>
+	  </div>
+	  
+	  <div class="col-md-4 inner-box">
+	      <div class="text-center above-box box" style="background-color: #005748;">
+		      <h3 style="color: #FFFFFF" class="box-element">TOP-RATED PRACTICUMS & INTERNSHIPS SUCH AS THE U.S. OLYMPIC TRAINING CENTER</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">TAYLOR.EDU/EXERCISESCIENCE</p>
+	      </div>
+	      
+	      <div class="text-center box" style="background-color: #E86900;">
+		      <h3 style="color: #FFFFFF" class="box-element">STUDY ABROAD PROGRAMS</h1>
+		      <p style="background-color: #FFFFFF; margin-bottom: 15px;" class="label-primary sharp box-element">LEARN MORE</p>
+	      </div>
+	  </div>
+	  
+	  <div class="col-md-4 right-box">
+	    <div class="above-box box left-box col-md-6 text-center"style="height:200px">
+		      <img class="img-responsive" src="http://taylor.edu/images-responsive/2x2_sm-facebook-grey.png">
+	    </div>
+	    <div class="above-box box col-md-6 text-center"style="height:200px;">
+		      <img class="img-responsive" src="http://taylor.edu/images-responsive/2x2_sm-youtube-grey.png">
+	    </div>
+	    
+	      
+	      
+	  </div>
+      </div>
       
 	  
 	  
@@ -253,7 +386,7 @@
       
       
   <!--<footer class="row col-md-8 col-md-offset-2">-->
-    <div class= "row navbar navbar-default col-md-8 col-md-offset-2" style="padding-top: 10px;">
+    <div class= "row navbar navbar-default col-md-10 col-md-offset-1" style="padding-top: 10px;">
       <div class="container-fluid col-md-4 row">
         <div class="col-md-4">
 	  <div class="row text-center" style="padding-bottom: 10px">
